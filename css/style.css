@@ -1,0 +1,183 @@
+/*
+ position: relative 
+ position: fixed
+ position: absolute
+ position:  static  // default
+
+*/
+
+
+.nav-outer-most{
+    opacity: .9;
+   padding: 0;
+}
+.section-1{
+    background: url(../images/happy-team.jpg) center center fixed no-repeat;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+.section-1_overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8;
+}
+.form-card{
+    padding: 20px 5px;
+    opacity: .8;
+}
+.form-control{
+    margin: 5px 0px;
+}
+.body-section-1-container{
+    padding: 100px;
+  
+}
+.text-description{
+    font-size: 10px;
+}
+.content-left{
+  text-align: left;
+}
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-2{
+    padding: 20px 100px;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+.section-2 a{
+  text-decoration: none;
+}
+.just-fun{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 3;
+}
+.explore-connect{
+    padding: 40px 0px;
+}
+.explore-connect-left{
+    display: flex;
+    flex-direction: column;
+}
+.explore-connect-left img{
+    align-self: flex-end;
+    height: 200px;
+    width: 350px;
+}
+.explore-connect-right h1{
+  font-size: 1rem;
+}
+.explore-connect-right p{
+    font-size: 13px;
+}
+.create-section{
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.find_out_more{
+    align-self: center;
+    cursor: pointer;
+}
+.create-passion{
+    padding: 40px 50px;
+}
+.create-passion-right{
+    display: flex;
+    flex-direction: column;
+}
+.create-passion-right img{
+    align-self: flex-start;
+   height:250px;
+    width: 300px;
+}
+.create-passion-left{
+    display: flex;
+    flex-direction: column;
+}
+.create-passion-left h1{
+    align-self: center;
+  font-size: 1rem;
+}
+.create-passion-left p{
+    align-self: center;
+    font-size: 13px;
+}
+.share-section{
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.share-sub{
+    padding: 40px 0px;
+}
+.share-sub-left{
+    display: flex;
+    flex-direction: column;
+}
+.share-sub-left img{
+    align-self: flex-end;
+    height: 200px;
+    width: 350px;
+}
+.share-sub-right h1{
+  font-size: 1rem;
+}
+.share-sub-right p{
+    font-size: 13px;
+}
+.footer{
+display: flex;
+flex-direction: column;
+padding: 10px 0px;
+}
+.footer h1{
+ text-align: center;
+ font-size: 1.5rem;
+}
+.footer p{
+    text-align: center;
+    font-size: 1rem;
+}
+.footer button{
+  align-self: center;
+}
+.modal-dialog{
+    width: 30%;
+}
+
+
+/* add media queries */
+@media(max-width : 700px){
+    .content-left{
+        display: none;
+    }
+    .modal-dialog{
+        display: block;
+        width: 100%;
+    }
+    .explore-connect-left img{
+          width: 100%;
+    }
+    .explore-connect-right{
+        text-align: center;
+    }
+    .create-passion-left{
+        text-align: center;
+    }
+     .share-sub-left img{
+        width: 100%;
+     }
+     .share-sub-right{
+         text-align: center;
+     }
+}
