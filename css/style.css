@@ -6,11 +6,19 @@
 
 */
 
-
 .nav-outer-most{
-    opacity: .9;
-   padding: 0;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: linear() 
 }
+
+.navbar-toggler{
+    outline: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+
 .section-1{
     background: url(../images/happy-team.jpg) center center fixed no-repeat;
     background-size: cover;
